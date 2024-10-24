@@ -1,0 +1,61 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.1vw;
+    margin-top: 4vw;
+    font-weight: 500;
+    color: #160e37;
+}
+
+span.carregando {
+    display: block;
+    width: 3.6vw;
+    height: 3.6vw;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    border: 0.37vw solid #160e37;
+    border-top: 0.51vw solid #160e3700;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    display: flex;
+    height: 5vw;
+    align-items: center;
+}
+
+.logo > h1 {
+    font-weight: 700;
+    color: #160e37;
+}
+
+.logo>img {
+    width: 3.3vw;
+    margin: 0 1vw;
+}
